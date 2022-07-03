@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+redis:
+  db: 0
+  addr: '127.0.0.1:6379'
+  password: ''
+  poolSize: 10
+
+captcha:
+  height: 80
+  width: 245
+  noiseCount: 5
+  showLineOptions: 3
+  length: 5
+
+mysql:
+  path: '127.0.0.1'
+  port: 3306
+  config: 'charset=utf8&parseTime=True&loc=Local'
+  dbname: 'api_platform'
+  username: 'wisdom'
+  password: 'wisdom@!@'
+  max-idle-conns: 10
+  max-open-conns: 100
+
+zap:
+  loggerFile: './log/api-platform.log'
+  maxSize: 500
+  maxBackups: 5
+  maxAge: 30
+  compress: false
